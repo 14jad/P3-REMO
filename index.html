@@ -9,29 +9,46 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">MyWebsite</a>
-        <div>
-          <a href="#" class="me-3">Home</a>
-          <a href="#" class="me-3">About</a>
-          <a href="#">Contact</a>
+        <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container my-4">
-    <h1>Modern Web Development</h1>
-    <p>
-      Modern web development focuses on building fast, responsive, and accessible
-      websites that work well on any device. Using mobile-first design and CSS
-      frameworks like Bootstrap helps developers create consistent layouts quickly
-      while keeping the code clean and easy to maintain.
-    </p>
+  <main class="container my-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-8">
+        <h1 class="display-6 fw-bold">Modern Web Development</h1>
+        <p class="lead">
+          Modern web development focuses on building fast, responsive, and accessible
+          websites that work well on any device. Using mobile-first design and CSS
+          frameworks like Bootstrap helps developers create consistent layouts quickly
+          while keeping the code clean and easy to maintain.
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Why it matters</h5>
+            <p class="card-text">Responsive design ensures a great experience on phones, tablets, and desktops alike.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="bg-light text-center py-3">
+  <footer class="bg-dark text-light text-center py-3">
     <p class="mb-0">&copy; 2026 MyWebsite. All rights reserved.</p>
   </footer>
 
